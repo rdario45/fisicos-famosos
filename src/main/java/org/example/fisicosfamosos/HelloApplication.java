@@ -43,6 +43,9 @@ public class HelloApplication extends Application {
             } else {
                 text = text + "-";
             }
+            if (i % 100 == 0) {
+                text = text + "\n";
+            }
         }
         launch();
 
