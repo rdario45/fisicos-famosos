@@ -1,4 +1,4 @@
-package org.example.fisicosfamosos;
+package co.rdario45.fisicosfamosos;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,19 +14,19 @@ class FisicoServiceTest {
         List<Fisico> fisicos = List.of(
                 new Fisico("Einstain", "1879", "1955")
         );
-        assertTrue( FisicoService.includes(fisicos, 1879) );
-        assertTrue( FisicoService.includes(fisicos, 1955) );
-        assertTrue( FisicoService.includes(fisicos, 1880) );
-        assertFalse( FisicoService.includes(fisicos, 2000) );
-        assertFalse( FisicoService.includes(fisicos, 1875) );
+        assertTrue( FisicosService.includes(fisicos, 1879) );
+        assertTrue( FisicosService.includes(fisicos, 1955) );
+        assertTrue( FisicosService.includes(fisicos, 1880) );
+        assertFalse( FisicosService.includes(fisicos, 2000) );
+        assertFalse( FisicosService.includes(fisicos, 1875) );
     }
 
     @Test
     void populate() {
         List fisicos = new ArrayList();
-        String[] args = {"[Galileo,1564,1642]", "[Einstein,1879,1955]"};
+        String[] args = {"Galileo(1564,1642)"};
         try {
-            FisicoService.populate( fisicos, args);
+            FisicosService.populate( fisicos, args);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -1,4 +1,4 @@
-package org.example.fisicosfamosos;
+package co.rdario45.fisicosfamosos;
 
 public class Fisico {
 

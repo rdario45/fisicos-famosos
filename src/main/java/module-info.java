@@ -4,6 +4,6 @@ module org.example.fisicosfamosos {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens org.example.fisicosfamosos to javafx.fxml;
-    exports org.example.fisicosfamosos;
+    opens co.rdario45.fisicosfamosos to javafx.fxml;
+    exports co.rdario45.fisicosfamosos;
 }
